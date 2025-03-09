@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>My speech for my most Love one</title>
+  <link rel = "icon" href = 
+"https://i.postimg.cc/hj1BrxSZ/My-love.png" 
+        type = "image/x-icon"> 
+  <style>
+	body {
+  font-family: 'Gochi Hand', cursive;
+font-family: 'Kameron', serif; 
+  color:#33ff66;
+  background: url("https://cutewallpaper.org/21/1920-x-1080-gif/1920x1080-Wallpapercartoon-Wallpapers-Driverlayer-Search-.gif");
+  letter-spacing: 3px; 
+  font-weight: bold;
+}
+  </style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+ <head>
+ <link rel="stylesheet" type="text/css"
+<link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Kameron" rel="stylesheet">
+<body>
+  <div id="typedtext"></div>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
+<!-- partial -->
+  <script>
+	// set up text to print, each item in array is new line
+var aText = new Array(
+"Hi Love", 
+"Lovey",
+"Love Love",
+"Bebi",
+"and many more",
+"Happy 2nd Monthsary to us", 
+"I just want to say thank you for everything you gave to me" ,
+"thank you for having me whenever your down",
+"thank you for being concerned with me even tho im stubborn most of the times,",
+"thank you for understanding me whenever nagkakaroon ako ng slight change of mood,",
+"and thank you for being with me, and hoping that it would last a lifetime,", 
+"because i wanted this relationship to be your last and final,", 
+"for the past 2 months, i realized that loving you is the best thing that happened to me",
+"knowing you is the biggest blessing that i got,",
+"I love you very very much my love.",
+"i know that i probably said that a ton, but saying it doesn't express fully my love to you," ,
+ "thank you for the time that we spent today, waiting for it was worth it,",
+ "and wishing that this day would pass by fast so that we can meet again." ,
+  "But seriously, i enjoyed every second of this day," ,
+  "kaya thank you, kahit na grabe ung pawis ko sa uv nung uwian," ,
+  "nagawa mo pang di matulog para maka idlip ako ng mahimbing,",
+  "and im sorry that all i got is for you was DIY paper flower and this coded message,",
+  "i know this isnt enough and ill make bawi next time, i promise you that,",
+  "Then you also get spoiled for my suprise which is the shirt,",
+  "you jabaited my ahh thinking na merong printing sa uniqlo,",
+ "And finally may pic na us, after all of this we finally have one,",
+ "and tiktok which paulit ulit kasi minsan malayo ka or ako, or di ako makita,",
+ "super racist talaga as in, WHAHWHAHAHAHAHAHAHA,",
+ "and ung time na nawala ung flower out of nowhere, and buti na check ko,",
+ "kung hindi wala akong nabigay na regalo niisa, napa jogging pa tuloy tayo,",
+ "Always remember that ill never ever leave you,.",
+ "even if it gets to the point where it gets rough,",
+ "ill always try to be a better bf and understand all of it,",
+ "and hoping that you can lock in for this sem,para you can make bawi for your grades,",
+  "and dont overthink it lovey, i know you can do it, ill always be by your side,",
+ "And lastly I love youu,",
+ "Happy monhtsary to us lovey, and many more to come :).",
+);
+var iSpeed = 35; // time delay of print out
+var iIndex = 0; // start printing array at this position
+var iArrLength = aText[1].length; // the length of the text array
+var iScrollAt = 50; // start scrolling up at this many lines
+ 
+var iTextPos = 0; // initialise text position
+var sContents = ''; // initialise contents variable
+var iRow; // initialise current row
+ 
+function typewriter()
+{
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+ var destination = document.getElementById("typedtext");
+ 
+ while ( iRow < iIndex ) {
+  sContents += aText[iRow++] + '<br />';
+ }
+ destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if ( iTextPos++ == iArrLength ) {
+  iTextPos = 0;
+  iIndex++;
+  if ( iIndex != aText.length ) {
+   iArrLength = aText[iIndex].length;
+   setTimeout("typewriter()", 100);
+  }
+ } else {
+  setTimeout("typewriter()", iSpeed);
+ }
+}
+
+
+typewriter();
+  </script>
+
+</body>
+</html>
